@@ -29,5 +29,8 @@
     <ClInclude Include="tests.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
+    <ClInclude Include="PrimeNumbers.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

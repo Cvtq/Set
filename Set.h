@@ -19,7 +19,7 @@ public:
 	// Вставка элемента
 	void insert(T value) {
 		if (int(value) >= 0) {
-			if (_v.size() < int(value)) {
+			if (_v.size() <= int(value)) {
 				_v.resize(int(value) + 1);
 			}
 			_v[int(value)] = 1;
@@ -32,7 +32,7 @@ public:
 			return false;
 		}
 
-		if (_v.size() < int(value)) {
+		if (_v.size() <= int(value)) {
 			return false;
 		}
 
@@ -42,7 +42,7 @@ public:
 	// Удаление элемента из набора
 	void del(T value) {
 		if (int(value) >= 0) {
-			if (_v.size() < int(value)) {
+			if (_v.size() <= int(value)) {
 				return;
 			}
 			_v[int(value)] = 0;

@@ -151,6 +151,7 @@
     <ClCompile Include="Set.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="PrimeNumbers.h" />
     <ClInclude Include="Set.h" />
     <ClInclude Include="tests.h" />
   </ItemGroup>
