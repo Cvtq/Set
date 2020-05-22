@@ -16,6 +16,7 @@ public:
 		_v.resize(1);
 	}
 
+	// Вставка элемента
 	void insert(T value) {
 		if (int(value) >= 0) {
 			if (_v.size() < int(value)) {
@@ -25,6 +26,7 @@ public:
 		}
 	}
 
+	// Проверка наличия элемента в наборе
 	bool isMember(T value) {
 		if (int(value) < 0) {
 			return false;
@@ -37,6 +39,7 @@ public:
 		return bool(_v[int(value)]);
 	}
 
+	// Удаление элемента из набора
 	void del(T value) {
 		if (int(value) >= 0) {
 			if (_v.size() < int(value)) {
@@ -46,6 +49,7 @@ public:
 		}
 	}
 
+	// Вывод элемента
 	void print() {		
 		for (size_t i = 0; i < _v.size(); i++){
 			if (_v[i] == 1) {
